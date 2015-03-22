@@ -1,0 +1,27 @@
+{
+  "name": "reveal-boilerplate",
+  "version": "1.0.0",
+  "description": "A boilerplate to create presentations using Reveal.JS, Gulp and more",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "reveal",
+    "gulp",
+    "stylus",
+    "highlight"
+  ],
+  "author": "Willian Justen de Vasconcellos",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.4.0",
+    "gulp": "^3.8.11",
+    "gulp-concat": "^2.5.2",
+    "gulp-imagemin": "^2.2.1",
+    "gulp-jade": "^1.0.0",
+    "gulp-plumber": "^1.0.0",
+    "gulp-stylus": "^2.0.1",
+    "gulp-uglify": "^1.1.0"
+  }
+}
