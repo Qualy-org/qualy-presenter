@@ -13,8 +13,8 @@ var gulp        = require('gulp'),
 gulp.task('jade', function(){
 	return gulp.src('src/templates/index.jade')
 		.pipe(plumber())
-		.pipe(jade())
-		.pipe(gulp.dest('build/index.html'))
+		.pipe(jade({pretty: true}))
+		.pipe(gulp.dest('build/'))
 });
 
 // Call Uglify and Concat JS
