@@ -17,11 +17,15 @@ gulp.task('jade', function(){
 		.pipe(gulp.dest('build/'))
 });
 
+gulp.task('notes', function(){
+	return gulp.src('src/js/vendor/notes/notes.html')
+			.pipe(gulp.dest('build/js/vendor/notes/'))
+})
+
 // Call Uglify and Concat JS
 gulp.task('js', function(){
 	return gulp.src('src/js/**/*.js')
 		.pipe(plumber())
-		.pipe(concat('main.js'))
 		.pipe(uglify())
 		.pipe(gulp.dest('build/js'))
 });
@@ -30,7 +34,7 @@ gulp.task('js', function(){
 gulp.task('stylus', function(){
 		gulp.src('src/styl/main.styl')
 		.pipe(plumber())
-		.pipe(stylus())
+		.pipe(stylus({compress: true}))
 		.pipe(gulp.dest('build/css'))
 });
 
@@ -67,4 +71,4 @@ gulp.task('browser-sync', function () {
 });
 
 // Default task
-gulp.task('default', ['js', 'jade', 'stylus', 'imagemin', 'watch', 'browser-sync']);
+gulp.task('default', ['js', 'jade', 'notes', 'stylus', 'imagemin', 'watch', 'browser-sync']);
