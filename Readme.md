@@ -48,6 +48,12 @@ new_project -
 		/unit
 ```
 
+### How to Use
+
+- Write your slides in `src/slides` folder in separated files using the [jade syntax](http://jade-lang.com/) and add them on `templates/index.jade`.
+
+- If you want to add another scripts and css use the `templates/inc/` folder and call them in the  `templates/index.jade`.
+
 ### Tasks
 
 - `gulp`: Initialize watch for changes and a server(localhost:3000)
