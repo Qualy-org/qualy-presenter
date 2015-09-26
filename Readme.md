@@ -63,3 +63,5 @@ new_project -
 - `gulp imagemin`:compress image files
 - `gulp watch`: call for watch files
 - `gulp jade`: compile jade files
+- `gulp deploy-pages`: deploy compiled files at `build` to `github` on branch `gh-pages`.
+- `gulp deploy-src`: deploy compiled files at `build` to `github pages` on branch `master`.
