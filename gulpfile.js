@@ -7,7 +7,8 @@ var gulp        = require('gulp'),
 	uglify      = require('gulp-uglify'),
 	concat      = require('gulp-concat'),
 	stylus      = require('gulp-stylus'),
-	imagemin    = require('gulp-imagemin');
+	imagemin    = require('gulp-imagemin'),
+	deploy      = require('gulp-gh-pages');
 
 // Call Jade for compile Templates
 gulp.task('jade', function(){
@@ -68,6 +69,20 @@ gulp.task('browser-sync', function () {
 		 baseDir: './build/'
 	  }
    });
+});
+
+// Deploy to github pages
+gulp.task('deploy-pages', function () {
+  return gulp.src("build/**/*")
+    .pipe(deploy());
+});
+
+// Deploy to
+gulp.task('deploy-src', function () {
+  return gulp.src("./")
+    .pipe(deploy({
+    	branch: 'master'
+    }));
 });
 
 // Default task
