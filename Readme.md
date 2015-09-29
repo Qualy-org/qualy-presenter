@@ -74,6 +74,8 @@ new_project -
 
 Details can be found on the [google design specs website](http://www.google.com/design/spec/style/color.html#color-color-palette).
 
+### Tasks
+
 
 - `gulp`: Initialize watch for changes and a server(localhost:3000)
 - `gulp js`: execute js files
