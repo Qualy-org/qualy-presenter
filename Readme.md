@@ -57,7 +57,7 @@ new_project -
 - You can use material design color palette typing something like this:
 
 
-### Tasks> The shade is optional (500 is the default shade).
+#### Tasks> The shade is optional (500 is the default shade).
 
 `example.styl`
 
