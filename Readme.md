@@ -54,7 +54,26 @@ new_project -
 
 - If you want to add another scripts and css use the `templates/inc/` folder and call them in the  `templates/index.jade`.
 
-### Tasks
+- You can use material design color palette typing something like this:
+
+
+### Tasks> The shade is optional (500 is the default shade).
+
+`example.styl`
+
+```stylus
+@import 'palette'
+...
+
+.my-div
+  background-color palette('Light Blue', '700')
+  color palette('Red') // default shade is 500
+```
+
+> If you need direct access to the variables, you can access it like `$palette['Light Blue']['500']`
+
+Details can be found on the [google design specs website](http://www.google.com/design/spec/style/color.html#color-color-palette).
+
 
 - `gulp`: Initialize watch for changes and a server(localhost:3000)
 - `gulp js`: execute js files
