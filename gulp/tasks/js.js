@@ -2,10 +2,10 @@
 
 // Necessary Plugins
 var gulp          = require('gulp')
-    ,plumber        = require('gulp-plumber')
-    ,paths          = require('../paths')
-    ,uglify         = require('gulp-uglify')
-    ,concat         = require('gulp-concat');
+    ,plumber      = require('gulp-plumber')
+    ,paths        = require('../paths')
+    ,uglify       = require('gulp-uglify')
+    ,concat       = require('gulp-concat');
 
 // Call Uglify and Concat JS
 module.exports = gulp.task('js', function(){

@@ -4,7 +4,6 @@
 var gulp     = require('gulp')
     ,plumber = require('gulp-plumber')
     ,paths   = require('../paths')
-    ,path    = require('path')
     ,fs      = require('fs')
     ,jade    = require('gulp-jade');
 
