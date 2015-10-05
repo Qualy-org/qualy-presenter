@@ -40,12 +40,18 @@ new_project -
 		/js
 		/slides
 		/styl
-		/styl
+			/highlight-themes
+			/reveal-themes
+			/vendor
+			main.styl
 		/templates
-		gulpfile.js
-		package.json
-	/tests -
-		/unit
+			/inc
+				head.jade
+				scripts.jade
+	.gitignore	
+	gulpfile.js
+	package.json
+	Readme.md
 ```
 
 ### How to Use
