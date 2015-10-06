@@ -60,6 +60,10 @@ new_project -
 
 - If you want to add another scripts and css use the `templates/inc/` folder and call them in the  `templates/index.jade`.
 
+- Look for different themes on [src/styl/reveal-themes](https://github.com/willianjusten/reveal-boilerplate/tree/master/src/styl/reveal-themes) and call them on [src/styl/main.styl](https://github.com/willianjusten/reveal-boilerplate/blob/master/src/styl/main.styl). 
+
+- And for highlight themes you can see on [src/styl/highlight-themes](https://github.com/willianjusten/reveal-boilerplate/blob/master/src/styl/highlight-themes/).
+
 ### Tasks
 
 - `gulp`: Initialize watch for changes and a server(localhost:3000)
