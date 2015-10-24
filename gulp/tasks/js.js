@@ -4,8 +4,7 @@
 var gulp          = require('gulp')
     ,plumber      = require('gulp-plumber')
     ,paths        = require('../paths')
-    ,uglify       = require('gulp-uglify')
-    ,concat       = require('gulp-concat');
+    ,uglify       = require('gulp-uglify');
 
 // Call Uglify and Concat JS
 module.exports = gulp.task('js', function(){
