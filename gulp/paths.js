@@ -32,7 +32,6 @@ module.exports = {
     },
 
     deploy: {
-      pages: 'build/**/*',
-      src: './'
+      pages: 'build/**/*'
     }
 };

@@ -62,7 +62,27 @@ new_project -
 
 - Look for different themes on [src/styl/reveal-themes](https://github.com/willianjusten/reveal-boilerplate/tree/master/src/styl/reveal-themes) and call them on [src/styl/main.styl](https://github.com/willianjusten/reveal-boilerplate/blob/master/src/styl/main.styl). 
 
-- And for highlight themes you can see on [src/styl/highlight-themes](https://github.com/willianjusten/reveal-boilerplate/blob/master/src/styl/highlight-themes/).
+- For highlight themes you can see on [src/styl/highlight-themes](https://github.com/willianjusten/reveal-boilerplate/blob/master/src/styl/highlight-themes/).
+
+### How to deploy to Github Pages
+
+The first deploy needs to be manual:
+
+```sh
+# creates a gh-pages branch
+git checkout -b gh-pages
+
+# push and track the gh-pages branch
+git push --set-upstream origin gh-pages
+```
+
+To do next deploys, you just have to run with gulp:
+
+```sh
+# will create a .publish folder with build content
+# and push to gh-pages branch.
+gulp deploy-pages
+```
 
 ### Tasks
 
@@ -74,4 +94,3 @@ new_project -
 - `gulp watch`: call for watch files
 - `gulp jade`: compile jade files
 - `gulp deploy-pages`: deploy compiled files at `build` to `github` on branch `gh-pages`.
-- `gulp deploy-src`: deploy compiled files at `build` to `github pages` on branch `master`.
