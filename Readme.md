@@ -64,7 +64,30 @@ new_project -
 
 - For highlight themes you can see on [src/styl/highlight-themes](https://github.com/willianjusten/reveal-boilerplate/blob/master/src/styl/highlight-themes/).
 
-### How to deploy to Github Pages
+### How to use with git and deploy to Github Pages
+
+When you clone this repo, every git information will be downloaded to. So, you have to remove all my git stuff to create yours.
+
+```sh
+# Inside of your project runs to remove git folder.
+rm -Rf .git
+```
+
+Next, initialize your git repository:
+
+```sh
+# init the repo
+git init
+```
+
+Commit all files:
+
+```sh
+# add all files to commit
+git add .
+# create a commit
+git commit -m "Initial commit"
+```
 
 The first deploy needs to be manual:
 
