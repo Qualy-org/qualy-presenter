@@ -129,6 +129,13 @@ gulp deploy-pages
 - `gulp jade`: compile jade files
 - `gulp deploy-pages`: deploy compiled files at `build` to `github` on branch `gh-pages`.
 
+### Examples
+
+Some presentations using the boilerplate:
+
+- [Criando Experiências com SVG](http://willianjusten.com.br/semcomp-2015/#/)
+- [Passos para se ter um projeto com qualidade](http://willianjusten.com.br/imasters-2015/#/)
+
 ### License
 
 This boilerplate is free and open source software, distributed under the The MIT License. So feel free to use this to create your site without linking back to me or using a disclaimer.
