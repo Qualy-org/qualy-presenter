@@ -1,5 +1,5 @@
 {
-  "name": "reveal-boilerplate",
+  "name": "quayly-presenter",
   "version": "1.0.0",
   "description": "A boilerplate to create presentations using Reveal.JS, Gulp and more",
   "main": "index.js",

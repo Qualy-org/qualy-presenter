@@ -1,4 +1,4 @@
-# Reveal.js Boilerplate
+![Qualy Presenter](https://raw.githubusercontent.com/Qualy-org/qualy-presenter/master/src/img/qualy-presenter.png)
 
 This is a boilerplate to use [Reveal.JS](http://lab.hakim.se/reveal-js/) easily with [Gulp](http://gulpjs.com/), [Jade](http://jade-lang.com/) and [Stylus](http://learnboost.github.io/stylus/).
 
@@ -9,7 +9,7 @@ To know more about Reveal.js and how to use, [read the docs here](https://github
 
 ### Demo
 
-You can see the demo [here](http://willianjusten.com.br/reveal-boilerplate/)
+You can see the demo [here](http://qualy-org.github.io/qualy-presenter/)
 
 ### Installation
 
@@ -20,7 +20,7 @@ First of all, install the dependencies to run this boilerplate.
 
 ```sh
 # Clone this repository
-$ git clone git://github.com/willianjusten/reveal-boilerplate.git new_project
+$ git clone git@github.com:Qualy-org/qualy-presenter.git new_project
 $ cd new_project
 
 # install dependencies
@@ -32,30 +32,37 @@ $ gulp
 With the commands above, you have everything to start.
 
 ```sh
-new_project -
-	/build -
-		/css
-			main.css
-		/js
-		    /vendor
-			main.js
-		index.html
-	/src -
-		/js
-		/slides
-		/styl
-			/highlight-themes
-			/reveal-themes
-			/vendor
-			main.styl
-		/templates
-			/inc
-				head.jade
-				scripts.jade
-	.gitignore	
-	gulpfile.js
-	package.json
-	Readme.md
+├── Readme.md
+├── build
+│   ├── css
+│   │   └── main.css
+│   ├── img
+│   ├── index.html
+│   └── js
+│       ├── main.js
+│       └── vendor
+├── gulp
+│   ├── index.js
+│   ├── paths.js
+│   └── tasks
+├── gulpfile.js
+├── package.json
+└── src
+    ├── img
+    ├── js
+    │   ├── main.js
+    │   └── vendor
+    ├── slides
+    ├── styl
+    │   ├── highlight-themes
+    │   ├── main.styl
+    │   ├── reveal-themes
+    │   └── vendor
+    └── templates
+        ├── inc
+        │   ├── head.jade
+        │   └── scripts.jade
+        └── index.jade
 ```
 
 ### How to Use
@@ -64,9 +71,9 @@ new_project -
 
 - If you want to add another scripts and css use the `templates/inc/` folder and call them in the  `templates/index.jade`.
 
-- Look for different themes on [src/styl/reveal-themes](https://github.com/willianjusten/reveal-boilerplate/tree/master/src/styl/reveal-themes) and call them on [src/styl/main.styl](https://github.com/willianjusten/reveal-boilerplate/blob/master/src/styl/main.styl). 
+- Look for different themes on [src/styl/reveal-themes](https://github.com/Qualy-org/qualy-presenter/tree/master/src/styl/reveal-themes) and call them on [src/styl/main.styl](https://github.com/Qualy-org/qualy-presenter/blob/master/src/styl/main.styl). 
 
-- For highlight themes you can see on [src/styl/highlight-themes](https://github.com/willianjusten/reveal-boilerplate/blob/master/src/styl/highlight-themes/).
+- For highlight themes you can see on [src/styl/highlight-themes](https://github.com/Qualy-org/qualy-presenter/blob/master/src/styl/highlight-themes/).
 
 ### How to use with git and deploy to Github Pages
 
@@ -121,3 +128,9 @@ gulp deploy-pages
 - `gulp watch`: call for watch files
 - `gulp jade`: compile jade files
 - `gulp deploy-pages`: deploy compiled files at `build` to `github` on branch `gh-pages`.
+
+### License
+
+This boilerplate is free and open source software, distributed under the The MIT License. So feel free to use this to create your site without linking back to me or using a disclaimer.
+
+If you’d like to give me credit somewhere on your blog or tweet a shout out to [@willian_justen](https://twitter.com/willian_justen), that would be pretty sweet.
