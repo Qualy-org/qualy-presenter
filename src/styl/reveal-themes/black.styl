@@ -1,14 +1,13 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600");
-
+@import url('../../lib/font/source-sans-pro/source-sans-pro.css');
 section.has-light-background, section.has-light-background h1, section.has-light-background h2, section.has-light-background h3, section.has-light-background h4, section.has-light-background h5, section.has-light-background h6
-  color #fff
+  color #222
 
-html body
+body
   background #222
   background-color #222
 
 .reveal
-  font-family 'Source Sans Pro', Helvetica, sans-serif
+  font-family "Source Sans Pro", Helvetica, sans-serif
   font-size 38px
   font-weight normal
   color #fff
@@ -111,7 +110,7 @@ html body
     span
       &:after
         color #fff
-        background #068ee9
+        background #068de9
   section
     img
       margin 15px 0px
@@ -145,22 +144,26 @@ html body
       -webkit-transition width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985)
       -moz-transition width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985)
       transition width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985)
-  .slide-number
-    color #42affa
 
 ::selection
   color #fff
   background #bee4fd
   text-shadow none
 
-.reveal .slides > section, .reveal .slides > section > section
+.reveal .slides > section,
+.reveal .slides > section > section
   line-height 1.3
   font-weight inherit
 
-.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6
   margin 0 0 20px 0
   color #fff
-  font-family 'Source Sans Pro', Helvetica, sans-serif
+  font-family "Source Sans Pro", Helvetica, sans-serif
   font-weight 600
   line-height 1.2
   letter-spacing normal
@@ -168,48 +171,64 @@ html body
   text-shadow none
   word-wrap break-word
 
-.reveal img, .reveal video, .reveal iframe
+.reveal img,
+.reveal video,
+.reveal iframe
   max-width 95%
   max-height 95%
 
-.reveal strong, .reveal b
+.reveal strong,
+.reveal b
   font-weight bold
 
-.reveal ol, .reveal dl, .reveal ul
+.reveal ol,
+.reveal dl,
+.reveal ul
   display inline-block
   text-align left
   margin 0 0 0 1em
 
-.reveal ul ul, .reveal ul ol, .reveal ol ol, .reveal ol ul
+.reveal ul ul,
+.reveal ul ol,
+.reveal ol ol,
+.reveal ol ul
   display block
   margin-left 40px
 
-.reveal q, .reveal blockquote
+.reveal q,
+.reveal blockquote
   quotes none
 
-.reveal blockquote p:first-child, .reveal blockquote p:last-child
+.reveal blockquote p:first-child,
+.reveal blockquote p:last-child
   display inline-block
 
-.reveal table th, .reveal table td
+.reveal table th,
+.reveal table td
   text-align left
   padding 0.2em 0.5em 0.2em 0.5em
   border-bottom 1px solid
 
-.reveal table th[align="center"], .reveal table td[align="center"]
+.reveal table th[align="center"],
+.reveal table td[align="center"]
   text-align center
 
-.reveal table th[align="right"], .reveal table td[align="right"]
+.reveal table th[align="right"],
+.reveal table td[align="right"]
   text-align right
 
-.reveal .controls .navigate-left, .reveal .controls .navigate-left.enabled
+.reveal .controls .navigate-left,
+.reveal .controls .navigate-left.enabled
   border-right-color #42affa
 
-.reveal .controls .navigate-right, .reveal .controls .navigate-right.enabled
+.reveal .controls .navigate-right,
+.reveal .controls .navigate-right.enabled
   border-left-color #42affa
 
-.reveal .controls .navigate-up, .reveal .controls .navigate-up.enabled
+.reveal .controls .navigate-up,
+.reveal .controls .navigate-up.enabled
   border-bottom-color #42affa
 
-.reveal .controls .navigate-down, .reveal .controls .navigate-down.enabled
+.reveal .controls .navigate-down,
+.reveal .controls .navigate-down.enabled
   border-top-color #42affa
-

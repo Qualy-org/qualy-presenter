@@ -1,23 +1,21 @@
 @import url('../../lib/font/league-gothic/league-gothic.css');
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic');
+html *
+  color-profile sRGB
+  rendering-intent auto
+
 body
-  background #1c1e20
-  background -moz-radial-gradient(center, circle cover, #555a5f 0%, #1c1e20 100%)
-  background -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #555a5f), color-stop(100%, #1c1e20))
-  background -webkit-radial-gradient(center, circle cover, #555a5f 0%, #1c1e20 100%)
-  background -o-radial-gradient(center, circle cover, #555a5f 0%, #1c1e20 100%)
-  background -ms-radial-gradient(center, circle cover, #555a5f 0%, #1c1e20 100%)
-  background radial-gradient(center, circle cover, #555a5f 0%, #1c1e20 100%)
-  background-color #2b2b2b
+  background #002b36
+  background-color #002b36
 
 .reveal
   font-family "Lato", sans-serif
   font-size 36px
   font-weight normal
-  color #eee
+  color #93a1a1
   h1
     font-size 3.77em
-    text-shadow 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 20px 20px rgba(0, 0, 0, 0.15)
+    text-shadow none
   h2
     font-size 2.11em
   h3
@@ -93,18 +91,18 @@ body
     *
       vertical-align top
   a
-    color #13DAEC
+    color #268bd2
     text-decoration none
     -webkit-transition color 0.15s ease
     -moz-transition color 0.15s ease
     transition color 0.15s ease
     &:hover
-      color #71e9f4
+      color #78b9e6
       text-shadow none
       border none
       img
         background rgba(255, 255, 255, 0.2)
-        border-color #13DAEC
+        border-color #268bd2
         box-shadow 0 0 20px rgba(0, 0, 0, 0.55)
     img
       -webkit-transition all 0.15s linear
@@ -114,12 +112,12 @@ body
     span
       &:after
         color #fff
-        background #0d99a5
+        background #1a6091
   section
     img
       margin 15px 0px
       background rgba(255, 255, 255, 0.12)
-      border 4px solid #eee
+      border 4px solid #93a1a1
       box-shadow 0 0 10px rgba(0, 0, 0, 0.15)
       &.plain
         border 0
@@ -128,30 +126,30 @@ body
     .navigate-left
       &.enabled
         &:hover
-          border-right-color #71e9f4
+          border-right-color #78b9e6
     .navigate-right
       &.enabled
         &:hover
-          border-left-color #71e9f4
+          border-left-color #78b9e6
     .navigate-up
       &.enabled
         &:hover
-          border-bottom-color #71e9f4
+          border-bottom-color #78b9e6
     .navigate-down
       &.enabled
         &:hover
-          border-top-color #71e9f4
+          border-top-color #78b9e6
   .progress
     background rgba(0, 0, 0, 0.2)
     span
-      background #13DAEC
+      background #268bd2
       -webkit-transition width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985)
       -moz-transition width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985)
       transition width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985)
 
 ::selection
   color #fff
-  background #FF5E99
+  background #d33682
   text-shadow none
 
 .reveal .slides > section,
@@ -166,13 +164,13 @@ body
 .reveal h5,
 .reveal h6
   margin 0 0 20px 0
-  color #eee
+  color #eee8d5
   font-family "League Gothic", Impact, sans-serif
   font-weight normal
   line-height 1.2
   letter-spacing normal
   text-transform uppercase
-  text-shadow 0px 0px 6px rgba(0, 0, 0, 0.2)
+  text-shadow none
   word-wrap break-word
 
 .reveal img,
@@ -223,16 +221,16 @@ body
 
 .reveal .controls .navigate-left,
 .reveal .controls .navigate-left.enabled
-  border-right-color #13DAEC
+  border-right-color #268bd2
 
 .reveal .controls .navigate-right,
 .reveal .controls .navigate-right.enabled
-  border-left-color #13DAEC
+  border-left-color #268bd2
 
 .reveal .controls .navigate-up,
 .reveal .controls .navigate-up.enabled
-  border-bottom-color #13DAEC
+  border-bottom-color #268bd2
 
 .reveal .controls .navigate-down,
 .reveal .controls .navigate-down.enabled
-  border-top-color #13DAEC
+  border-top-color #268bd2
