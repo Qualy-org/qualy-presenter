@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <title>Qualy Presenter</title>
     <meta name="description" content="Create your presentations never been so easy with code.">
     <meta name="author" content="You">
     <meta property="og:type" content="website">
@@ -22,12 +23,20 @@
           <section>
             <h1>Slide 2 - 2</h1>
             <ul>
-              <li>item1</li>
-              <li>item2</li>
-              <li>item3</li>
-              <li>item4</li>
+              <li class="fragment">item1</li>
+              <li class="fragment">item2</li>
+              <li class="fragment">item3</li>
+              <li class="fragment">item4</li>
             </ul>
           </section>
+        </section>
+        <section data-background-color="#446971">
+          <pre><code>var linearMultHash = function(n, HASH_TABLE_SIZE) {
+  var A = 0.642384983213213;
+  var value = n * A;
+  value = value * (int)value;
+  return value * HASH_TABLE_SIZE;
+}</code></pre>
         </section>
       </div>
     </div>
