@@ -133,8 +133,10 @@ gulp deploy-pages
 
 Some presentations using the boilerplate:
 
-- [Criando Experiências com SVG](http://willianjusten.com.br/semcomp-2015/#/)
-- [Passos para se ter um projeto com qualidade](http://willianjusten.com.br/imasters-2015/#/)
+- [Criando Experiências com SVG - SEMCOMP 15](http://willianjusten.com.br/semcomp-2015/#/)
+- [Passos para se ter um projeto com qualidade - Imasters 15](http://willianjusten.com.br/imasters-2015/#/)
+- [CSS loves Math - Meetup CSS SP](https://willianjusten.com.br/meetup-css-sp)
+- [JS loves Music - Front in Sampa 16](https://willianjusten.com.br/frontinsampa-16/)
 
 ### License
 
