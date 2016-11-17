@@ -5,14 +5,12 @@ var gulp     = require('gulp')
     ,plumber = require('gulp-plumber')
     ,paths   = require('../paths')
     ,fs      = require('fs')
-    ,jade    = require('gulp-jade');
+    ,pug = require('gulp-pug');
 
-// Call Jade to compile Templates
-module.exports = gulp.task('jade', function () {
-  return gulp.src(paths.source.files.jade)
+// Call Pug to compile Templates
+module.exports = gulp.task('pug', function () {
+  return gulp.src(paths.source.files.pug)
     .pipe(plumber())
-    .pipe(jade({
-      pretty: true
-    }))
+    .pipe(pug())
     .pipe(gulp.dest(paths.build.html))
 });
