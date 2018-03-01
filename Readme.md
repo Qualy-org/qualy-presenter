@@ -1,6 +1,6 @@
 ![Qualy Presenter](https://raw.githubusercontent.com/Qualy-org/qualy-presenter/master/src/img/qualy-presenter.png)
 
-This is a boilerplate to use [Reveal.JS](http://lab.hakim.se/reveal-js/) easily with [Gulp](http://gulpjs.com/), [Jade](http://jade-lang.com/) and [Stylus](http://learnboost.github.io/stylus/).
+This is a boilerplate to use [Reveal.JS](http://lab.hakim.se/reveal-js/) easily with [Gulp](http://gulpjs.com/), [Pug](https://pugjs.org) and [Stylus](http://learnboost.github.io/stylus/).
 
 To know more about Reveal.js and how to use, [read the docs here](https://github.com/hakimel/reveal.js).
 
@@ -60,16 +60,16 @@ With the commands above, you have everything to start.
     │   └── vendor
     └── templates
         ├── inc
-        │   ├── head.jade
-        │   └── scripts.jade
-        └── index.jade
+        │   ├── head.pug
+        │   └── scripts.pug
+        └── index.pug
 ```
 
 ### How to Use
 
-- Write your slides in `src/slides` folder in separated files using the [jade syntax](http://jade-lang.com/) and add them on `templates/index.jade`.
+- Write your slides in `src/slides` folder in separated files using the [pug syntax](https://pugjs.org) and add them on `templates/index.pug`.
 
-- If you want to add another scripts and css use the `templates/inc/` folder and call them in the  `templates/index.jade`.
+- If you want to add another scripts and css use the `templates/inc/` folder and call them in the  `templates/index.pug`.
 
 - Look for different themes on [src/styl/reveal-themes](https://github.com/Qualy-org/qualy-presenter/tree/master/src/styl/reveal-themes) and call them on [src/styl/main.styl](https://github.com/Qualy-org/qualy-presenter/blob/master/src/styl/main.styl). 
 
@@ -126,7 +126,7 @@ gulp deploy-pages
 - `gulp stylus`: compile stylus files
 - `gulp imagemin`:compress image files
 - `gulp watch`: call for watch files
-- `gulp jade`: compile jade files
+- `gulp pug`: compile pug files
 - `gulp deploy-pages`: deploy compiled files at `build` to `github` on branch `gh-pages`.
 
 ### Examples

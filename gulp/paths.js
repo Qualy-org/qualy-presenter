@@ -1,15 +1,13 @@
-'use strict';
-
 module.exports = {
 
     source: {
-        templates: 'src/templates/**/*.jade',
-        slides: 'src/slides/*.jade',
+        templates: 'src/templates/**/*.pug',
+        slides: 'src/slides/*.pug',
         js: 'src/js/**/*.js',
         styl: 'src/styl/**/*.styl',
         img: 'src/img/**/*',
         files: {
-          jade: 'src/templates/index.jade',
+          pug: 'src/templates/index.pug',
           styl: 'src/styl/main.styl',
           notes: 'src/js/vendor/notes/notes.html'
         }

@@ -1,10 +1,8 @@
-'use strict';
-
 // Necessary Plugins
-var gulp     = require('gulp')
+const gulp     = require('gulp')
 
 // Move Notes
-module.exports = gulp.task('notes', function () {
-  return gulp.src('src/js/vendor/notes/notes.html')
+module.exports = gulp.task('notes', () =>
+  gulp.src('src/js/vendor/notes/notes.html')
     .pipe(gulp.dest('build/js/vendor/notes/'))
-});
+);
