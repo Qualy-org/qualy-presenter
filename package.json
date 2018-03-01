@@ -4,7 +4,7 @@
   "description": "A boilerplate to create presentations using Reveal.JS, Gulp and more",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "./node_modules/.bin/gulp"
   },
   "keywords": [
     "reveal",
@@ -20,7 +20,7 @@
     "gulp-cache": "0.5.0",
     "gulp-concat": "2.6.1",
     "gulp-gh-pages": "0.5.4",
-    "gulp-imagemin": "2.4.0",
+    "gulp-imagemin": "4.1.0",
     "gulp-plumber": "1.2.0",
     "gulp-pug": "3.3.0",
     "gulp-stylus": "2.7.0",
