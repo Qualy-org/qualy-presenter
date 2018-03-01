@@ -26,7 +26,7 @@ $ cd new_project
 # install dependencies
 $ npm install
 # run tasks and serve
-$ gulp
+$ npm start
 ```
 
 With the commands above, you have everything to start.
@@ -71,7 +71,7 @@ With the commands above, you have everything to start.
 
 - If you want to add another scripts and css use the `templates/inc/` folder and call them in the  `templates/index.pug`.
 
-- Look for different themes on [src/styl/reveal-themes](https://github.com/Qualy-org/qualy-presenter/tree/master/src/styl/reveal-themes) and call them on [src/styl/main.styl](https://github.com/Qualy-org/qualy-presenter/blob/master/src/styl/main.styl). 
+- Look for different themes on [src/styl/reveal-themes](https://github.com/Qualy-org/qualy-presenter/tree/master/src/styl/reveal-themes) and call them on [src/styl/main.styl](https://github.com/Qualy-org/qualy-presenter/blob/master/src/styl/main.styl).
 
 - For highlight themes you can see on [src/styl/highlight-themes](https://github.com/Qualy-org/qualy-presenter/blob/master/src/styl/highlight-themes/).
 
@@ -115,7 +115,7 @@ To do next deploys, you just have to run with gulp:
 ```sh
 # will create a .publish folder with build content
 # and push to gh-pages branch.
-gulp deploy-pages
+npm run deploy
 ```
 
 ### Tasks
