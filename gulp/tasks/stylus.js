@@ -2,7 +2,8 @@
 const gulp     = require('gulp')
     , plumber  = require('gulp-plumber')
     , paths    = require('../paths')
-    , stylus   = require('gulp-stylus');
+    , stylus   = require('gulp-stylus')
+    , cssnano  = require('gulp-cssnano');
 
 // Call Stylus
 module.exports = gulp.task('stylus', () =>
@@ -11,5 +12,6 @@ module.exports = gulp.task('stylus', () =>
     .pipe(stylus({
       compress: true
     }))
+    .pipe(cssnano())
     .pipe(gulp.dest(paths.build.css))
 );
