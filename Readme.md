@@ -78,6 +78,8 @@ With the commands above, you have everything to start.
 
 ### How to use Speaker Notes
 
+![Speaker Notes](https://raw.githubusercontent.com/Qualy-org/qualy-presenter/master/src/img/speaker-notes.png)
+
 Just add `data-notes` to the section of the slide, like the code bellow:
 
 ```js
