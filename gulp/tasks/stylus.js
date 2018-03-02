@@ -6,7 +6,7 @@ const gulp     = require('gulp')
 
 // Call Stylus
 module.exports = gulp.task('stylus', () =>
-  gulp.src(paths.source.files.styl)
+  gulp.src(paths.source.styl)
     .pipe(plumber())
     .pipe(stylus({
       compress: true

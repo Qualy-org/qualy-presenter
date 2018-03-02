@@ -4,7 +4,7 @@ module.exports = {
         templates: 'src/templates/**/*.pug',
         slides: 'src/slides/*.pug',
         js: 'src/js/**/*.js',
-        styl: 'src/styl/**/*.styl',
+        styl: 'src/styl/*.styl',
         img: 'src/img/**/*',
         files: {
           pug: 'src/templates/index.pug',
