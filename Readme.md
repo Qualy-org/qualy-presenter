@@ -4,7 +4,6 @@ This is a boilerplate to use [Reveal.JS](http://lab.hakim.se/reveal-js/) easily 
 
 To know more about Reveal.js and how to use, [read the docs here](https://github.com/hakimel/reveal.js).
 
-
 ## Getting Started
 
 ### Demo
@@ -36,6 +35,7 @@ With the commands above, you have everything to start.
 ├── build
 │   ├── css
 │   │   └── main.css
+│   │   └── theme.css
 │   ├── img
 │   ├── index.html
 │   └── js
@@ -55,9 +55,10 @@ With the commands above, you have everything to start.
     ├── slides
     ├── styl
     │   ├── highlight-themes
-    │   ├── main.styl
     │   ├── reveal-themes
-    │   └── vendor
+    │   ├── vendor
+    │   ├── main.styl
+    │   └── theme.styl
     └── templates
         ├── inc
         │   ├── head.pug
@@ -71,9 +72,22 @@ With the commands above, you have everything to start.
 
 - If you want to add another scripts and css use the `templates/inc/` folder and call them in the  `templates/index.pug`.
 
-- Look for different themes on [src/styl/reveal-themes](https://github.com/Qualy-org/qualy-presenter/tree/master/src/styl/reveal-themes) and call them on [src/styl/main.styl](https://github.com/Qualy-org/qualy-presenter/blob/master/src/styl/main.styl).
+- Look for different themes on [src/styl/reveal-themes](https://github.com/Qualy-org/qualy-presenter/tree/master/src/styl/reveal-themes) and call them on [src/styl/theme.styl](https://github.com/Qualy-org/qualy-presenter/blob/master/src/styl/theme.styl).
 
 - For highlight themes you can see on [src/styl/highlight-themes](https://github.com/Qualy-org/qualy-presenter/blob/master/src/styl/highlight-themes/).
+
+### How to use Speaker Notes
+
+Just add `data-notes` to the section of the slide, like the code bellow:
+
+```js
+- var notes = 'You can enter anything you want here. Just add data-notes to the section.'
+
+section(data-notes=notes)
+  img(src="img/qualy-presenter.png", alt="")
+  p
+    a(href="https://github.com/Qualy-org/qualy-presenter") Look the code on Github <3
+```
 
 ### How to use with git and deploy to Github Pages
 
