@@ -16,7 +16,7 @@
   "author": "Willian Justen de Vasconcellos",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "2.26.3",
+    "browser-sync": "2.26.4",
     "gulp": "3.9.1",
     "gulp-cache": "1.1.1",
     "gulp-concat": "2.6.1",
