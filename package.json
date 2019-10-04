@@ -17,7 +17,7 @@
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "2.26.5",
-    "gulp": "3.9.1",
+    "gulp": "4.0.2",
     "gulp-cache": "1.1.1",
     "gulp-concat": "2.6.1",
     "gulp-cssnano": "2.1.3",
