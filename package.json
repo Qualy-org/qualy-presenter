@@ -25,7 +25,7 @@
     "gulp-imagemin": "6.2.0",
     "gulp-plumber": "1.2.1",
     "gulp-pug": "4.0.1",
-    "gulp-stylus": "2.7.0",
+    "gulp-stylus": "2.7.1",
     "gulp-uglify": "3.0.0",
     "gulp-util": "3.0.8"
   }
